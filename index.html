@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CodeChest</title>
+</head>
+
+<body>
+    <h1 class="text">CodeChest</h1>
+    <div>
+
+        <div id="errorArea"></div>
+    </div>
+
+    <div id="wrapper">
+        <article class="card" role="article">
+            <a href="#">
+                <div class="card-text">
+                    <div class="card-meta">Task 1</div>
+                    <h2 class="card-title">
+                        
+                        <span id="result"></span>
+                    </h2>
+                </div>
+                <img class="card-image"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX23xsBAQEAAADr1Rr54hv+5hz/6Rzcxxjy3BtwZg3kzhnRvRemlxK1pBTArhUQDgKtnRPLuBaYihGIew9dVAo1MAaPghDGsxaBdQ5CPAdIQghqYAxkWwuhkhJ5bg1RSQkvKwUjIAQpJQUZFwMv5oxxAAAHIklEQVR4nO2ca3eqOhBA6ZAAgk/E96u2//8/3kRtKzCBiaCJ587+dNbSM802IeQxSRAwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwZoSUMhJJGIaBjNS/hesCYUgMyn9UduEqH2zOE9BMvrbrfBX6ZxnuBnV2Yev/kzKbL6DOYj3zTDJESgnQYihkmH/r731UudTmMvXJMUSL2WwowyOq9yd5TEkN/SXYGwqZm/V+JXPhSzVaG8p40eJ3DfEVe1KNtobRlOB3DTKMXuhhxtIwmhMFdZS1F4p2hnJAFtRh9j40VCtDVYNkv0ugnQe1aGMoqc/gX6S5e0ULQxHbCuruxnlDtTH8tBXUoWLX70W6oXrRWwuqWN8vV6pAN8S+SVF0/c4gG8rjQ4IqWOa2nZINH6xCFW3xHoby0DSXAPNcQ30wc6pINYwWuIGeD+7W6+P2A3cE2KZvUYcixesIoMgu6x6RjPNz7TvKeup6Nkw0lEOD4Dj6ERBSfQkqH+/Dd3njyx3eBLOSgEzPcP/pnb87qIbYeAZgVKkhEWzg79Nj4LwCA7Jhgj2GcKoZiJ94AOfM/ahbQzNUg26ska7qbVBkOqBqoEvXPcwPRMMV2kixRijVHBJg48sqDdlwjBlu0GYoJnqJxpMKDLoZ7tB6ktOT+1fEHV0MTcswvjyBV7oYLvzoLFvoYoj2NN5BNJyhb4uxV83RANEwRQ0371CJXcY0H5C/wZNInT2h62xqbuS/InXkXRhmT94MzoxQDQ2LGF6Nz3CorTQzrMPoDd/Q63okr0Q17WrPfXYkGzYsl1427j0aa5ehGhqb6Y9jkXlaj/Q1b8Ny4p/jdhz52OmQDdGhacXxPBL+VSR9Zyb6al3WB5j41+nQDdXom5JlAnvPHkiLHdJoQNmbuTyQPjna7OOLM0VROy48crQyJG/kq8GcN23VKttEUh7Fn3rcebIeZZkxtLJIiYKhF9VomfVloai3Dn2oRtvMPRl/2OR9jd3PkK2zL0VysqlG90lRD2TQRq0ZtPeh8IXxF/JQFnS8sajG03vscpcROoePXI2F21p8yFBVY0BvqnB0+iw+aKgckyXRUedjPF/EyMOG2jGfkBzdJih2MNRtdbqgVKTT5f9OhsoxiueTdkmX7bSjoe5XxXjffsTEXTPtbBjoMUC6bnF0mA3dh+HlqFdzzwpfb24YXHrWBkeHKZi9Gba8IeHoqhJ7NNTH9gpzIq2rgU2vhqrPGRkVXb31+zXU846JYRvO1Suxb8NAhPgiAKz/FUPTghySqvka+jc0rI3D579jKDI8byPpq8x22BoK0V5QgXU2HX+29j9q+sDOUMjVV/upyej0ckMRmcZM6DkKY4OK0kIn4Lc9UHKPNtMnGsr0ZDpehSZwwwce5nLRgK6Mlnc3ml70xDq83hBgmGXjaZVnpCHK34sGWo9qyQ1q+KyeRmaXwzqGCRqa64Skxgo5+luTgaL5UcSPLpx7EqoaBLfz5Ya2hTeo6gqniLLSGjAMmh5FOcJTNZ8x9Fa//O98BrZYqdBThTAvf1Wm1WUKpWhuqej5mpZf5UF0D/P3x7DjqnKJFqY0SJbJvD7tg1NiUtTbGljQQ++GtTtI4FBVNJy5u+94hXpS0XqezPA8L9PFGf0flo2yz9pZuWW5UDL8xsdXd79B/G1MSsRyEoVqFYZM1J6rUCbH+l8COMXR7d4YIaRptlqeBRjzhHROYhrdS6qQK9PVLr3fkTHCV0wAilGaKMkkXC3rRz5vX7p/YpryhPRr9pAlt9uzoiA+VJvN3XdH/TZS48Hry5Hk8+16LlPzK603NOYJXaJsisEyX+83H41XK/XqZ+oj70rVsLZZe98bliUq8Rpj1l5A3cFPD5Cojn5I+WxtMVvHstYYTiaTClMdPz52IUY5aO9V2Jrw2lCYZa0whqMIFjGfMeo2HaBvLwwW7IF7W0pBqyeie6F2OJ4oiC1rirClt2kJ+qSME1o6aLUw+JqfSDsowtdT/BRya10qY58n8AFep5h9YNvbAMxM7UmE5vFKS8wn3vwhgq1Vqep3JNwHE/uHHuzJU682EcK422UrqIgO1ooAC+M8sicM01G8NKuWLo92KWQp5Pr5SbRyRs3qWbTfOUq42LMU8jx7xbaoCI6EfBeAnPRr39ZMSX6vu8NUxqfmUum0c/KlsTKcN08jbhEhT1632SSiWdEwHQQ4xhZn64QMRtumyZL+aDt68d00Qqb5olaq66SumFpf8yBkOC0miOUt4tDF4SchZTwcTEo3PsNkn8+Sx45GShnE03UBFTaDYRY4u+5a6LWUbDUd5ofhcDTOYn2NeoeyXC9kT7PVaDS8BkyibhF7QYjrupEQPXV0OpDoMyDDMAzDMAzDMAzzf+M/LblLvmxNdPAAAAAASUVORK5CYII=" />
+            </a>
+        </article>
+
+        <article class="card" role="article">
+            <a href="#">
+                <div class="card-text">
+                    <div class="card-meta">Task 2</div>
+                    <h2 class="card-title">
+                        
+                        <span id="chessResult"></span>
+                    </h2>
+                </div>
+                <img class="card-image"
+                    src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/CHESScom/phphK5JVu.png" />
+            </a>
+        </article>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
